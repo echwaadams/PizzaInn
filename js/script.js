@@ -128,3 +128,7 @@ Order.prototype.getTotalAmount = function(){
     }
     return totalAmount;
 }
+
+function display(id, txt) {
+    $("#"+id).text(txt)
+}
