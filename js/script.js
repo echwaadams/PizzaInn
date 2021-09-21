@@ -52,3 +52,7 @@ var toppings = {
 var deliveryCost = 1100;
 var onePizza = "";
 var clientOrder = "";
+
+$(function () {
+    
+})
