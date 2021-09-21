@@ -77,4 +77,17 @@ $(function () {
         clientOrder = new Order(onePizza, quantity);
         $(".section-4").removeClass("hidden")
     })
+
+    $("#pizza-delivery").submit(function(e) {
+        e.preventDefault()
+        var y_delivery = $("#y_delivery").is(":checked");
+
+        if(y_delivery === true){
+            var location = prompt("Enter your location", "enter location")
+            clientOrder.setDelivery(true, location);
+        }
+        clientOrder.displayOrder();
+        $(".section-5").removeClass("hidden")
+
+    })
 })
