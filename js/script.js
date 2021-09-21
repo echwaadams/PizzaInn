@@ -54,5 +54,20 @@ var onePizza = "";
 var clientOrder = "";
 
 $(function () {
-    
+    $("#pizza-style").submit(function(e) {
+        e.preventDefault()
+        var chosenSize = $("#size").val();
+        var chosenCrust = $("#crust").val();
+        var chosenToppings = []; 
+        for(var i = 1; i <= 5; i++){
+            var b = $("#check"+i).is(":checked");
+            if(b === true){
+                chosenToppings.push($("#check"+i).val());
+            }
+        }
+        onePizza = new PizzaStyle(chosenSize, chosenCrust, chosenToppings);
+        display("one-pizza-price","RWF " + onePizza.getOnePizzaPrice());
+        $(".section-3").removeClass("hidden")
+
+    })
 })
