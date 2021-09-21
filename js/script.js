@@ -132,3 +132,17 @@ Order.prototype.getTotalAmount = function(){
 function display(id, txt) {
     $("#"+id).text(txt)
 }
+PizzaStyle.prototype.displayPizzaStyle = function(){
+    display("chosen-size", this.chosenSize);
+    display("chosen-crust", this.chosenCrust);
+    var top = "";
+    for(var k = 0; k < this.chosenToppings.length; k++){
+        top += this.chosenToppings[k] + " | ";
+    }
+    if(top === ""){
+        display("chosen-toppings", "No toppings chosen");
+    }
+    else{
+        display("chosen-toppings", top);
+    }
+}
