@@ -146,3 +146,13 @@ PizzaStyle.prototype.displayPizzaStyle = function(){
         display("chosen-toppings", top);
     }
 }
+
+Order.prototype.displayOrder = function() {
+    this.pizzaStyle.displayPizzaStyle();
+    if(this.needsDelivery === true ){
+        display("delivery-details", "Location: "+this.deliveryLocation + ", Cost: "+ deliveryCost);
+    }else{
+        display("delivery-details", " No delivery needed");
+    }
+    alert("total-amount", "RWF "+ this.getTotalAmount());
+}
