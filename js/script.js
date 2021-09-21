@@ -114,3 +114,8 @@ function Order(pizzaStyle, quantity){
     this.needsDelivery = false;
     this.deliveryLocation = "";
 }
+
+Order.prototype.setDelivery = function(needsDelivery, deliveryLocation){
+    this.needsDelivery = needsDelivery;
+    this.deliveryLocation = deliveryLocation;
+}
