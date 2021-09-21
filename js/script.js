@@ -70,4 +70,11 @@ $(function () {
         $(".section-3").removeClass("hidden")
 
     })
+
+    $("#order-quantity").submit(function(e) {
+        e.preventDefault();
+        var quantity = $("#quantity").val();
+        clientOrder = new Order(onePizza, quantity);
+        $(".section-4").removeClass("hidden")
+    })
 })
