@@ -47,3 +47,8 @@ var toppings = {
         "Funghi: Tomato,cheese,mushrooms" : 550,
         "Romana: Tomato,chesse,tuna, onion" : 750,
     }
+}
+
+var deliveryCost = 1100;
+var onePizza = "";
+var clientOrder = "";
