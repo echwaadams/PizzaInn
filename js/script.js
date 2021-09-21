@@ -97,3 +97,13 @@ function PizzaStyle(chosenSize, chosenCrust, chosenToppings) {
     this.chosenCrust = chosenCrust;
     this.chosenToppings = chosenToppings;
 };
+
+PizzaStyle.prototype.getOnePizzaPrice = function(){
+    var onePizzaPrice = pizzaBasePrice[this.chosenSize];
+    onePizzaPrice += crust[this.chosenSize][this.chosenCrust];
+    for(var k = 0; k < this.chosenToppings.length; k++){
+        var d = this.chosenToppings[k];
+        onePizzaPrice += toppings[this.chosenSize][d];
+    }
+    return onePizzaPrice;
+}
