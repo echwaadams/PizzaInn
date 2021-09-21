@@ -24,3 +24,26 @@ var crust = {
         "Flatbread" : 950,
     }
 }
+
+var toppings = {
+    small: {
+        "Margheritta: Tomato,cheese,oregano" : 300,
+        "Napoletana: Tomato,anchovies,garlic" : 400,
+        "Prosciuto:Tomato,cheese,ham,olives" : 505,
+        "Funghi: Tomato,cheese,mushrooms" : 350,
+        "Romana: Tomato,chesse,tuna, onion" : 350,
+    },
+    medium: {
+        "Margheritta: Tomato,cheese,oregano" : 400,
+        "Napoletana: Tomato,anchovies,garlic" : 500,
+        "Prosciuto:Tomato,cheese,ham,olives" : 605,
+        "Funghi: Tomato,cheese,mushrooms" : 450,
+        "Romana: Tomato,chesse,tuna, onion" : 650,
+    },
+    large: {
+        "Margheritta: Tomato,cheese,oregano" : 500,
+        "Napoletana: Tomato,anchovies,garlic" : 600,
+        "Prosciuto:Tomato,cheese,ham,olives" : 705,
+        "Funghi: Tomato,cheese,mushrooms" : 550,
+        "Romana: Tomato,chesse,tuna, onion" : 750,
+    }
